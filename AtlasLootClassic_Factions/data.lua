@@ -5,19 +5,15 @@ local _G = getfenv(0)
 local select = _G.select
 local string = _G.string
 local format = string.format
-
 -- WoW
-
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
 local addonname = ...
 local AtlasLoot = _G.AtlasLoot
 local data = AtlasLoot.ItemDB:Add(addonname, 1, 1)
-
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
-
 local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
 local ALLIANCE_DIFF
 local HORDE_DIFF
@@ -31,17 +27,13 @@ else
 	HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
 	LOAD_DIFF = ALLIANCE_DIFF
 end
-
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
-
 local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
-
 local FACTIONS3_CONTENT = data:AddContentType(AL["SoD Factions"], ATLASLOOT_RAID20_COLOR)
 local FACTIONS_CONTENT = data:AddContentType(AL["Factions"], ATLASLOOT_FACTION_COLOR)
 local FACTIONS2_CONTENT = data:AddContentType(AL["Secondary factions"], {0.1, 0.3, 0.1, 1})
-
 local FACTIONS_HORDE_CONTENT, FACTIONS_ALLI_CONTENT
 if UnitFactionGroup("player") == "Horde" then
     FACTIONS_HORDE_CONTENT = data:AddContentType(FACTION_HORDE, ATLASLOOT_HORDE_COLOR)
@@ -50,7 +42,6 @@ else
     FACTIONS_ALLI_CONTENT = data:AddContentType(FACTION_ALLIANCE, ATLASLOOT_ALLIANCE_COLOR)
     FACTIONS_HORDE_CONTENT = data:AddContentType(FACTION_HORDE, ATLASLOOT_HORDE_COLOR)
 end
-
 --[[
 0 - Unknown
 1 - Hated
@@ -62,9 +53,7 @@ end
 7 - Revered
 8 - Exalted
 ]]--
-
 local AD_INSIGNIA_FORMAT_BLUE, AD_INSIGNIA_FORMAT_EPIC = "|cff0070dd%d|r",  "|cffa335ee%d|r" -- format(AD_INSIGNIA_FORMAT, 30)
-
 data["Emerald Wardens"] = {
 	FactionID = 2641,
 	ContentType = FACTIONS3_CONTENT,
@@ -193,7 +182,6 @@ data["Emerald Wardens"] = {
 		},
 	},
 }
-
 data["Durotar Supply And Logistics"] = {
 	FactionID = 2587,
 	ContentType = FACTIONS3_CONTENT,
@@ -259,7 +247,6 @@ data["Durotar Supply And Logistics"] = {
 		},
 	},
 }
-
 data["Azeroth"] = {
 	FactionID = 2586,
 	ContentType = FACTIONS3_CONTENT,
@@ -325,7 +312,6 @@ data["Azeroth"] = {
 		},
 	},
 }
-
 data["ArgentDawn"] = {
 	FactionID = 529,
 	ContentType = FACTIONS_CONTENT,
@@ -395,7 +381,6 @@ data["ArgentDawn"] = {
 		},
 	},
 }
-
 data["Timbermaw"] = {
 	FactionID = 576,
 	ContentType = FACTIONS_CONTENT,
@@ -453,7 +438,6 @@ data["Timbermaw"] = {
 		},
 	},
 }
-
 data["ThoriumBrotherhood"] = {
 	FactionID = 59,
 	ContentType = FACTIONS_CONTENT,
@@ -547,7 +531,6 @@ data["ThoriumBrotherhood"] = {
 		},
 	},
 }
-
 data["CenarionCircle"] = {
 	FactionID = 609,
 	ContentType = FACTIONS_CONTENT,
@@ -616,7 +599,6 @@ data["CenarionCircle"] = {
 		},
 	},
 }
-
 data["ZandalarTribe"] = {
 	FactionID = 270,
 	ContentType = FACTIONS_CONTENT,
@@ -677,7 +659,6 @@ data["ZandalarTribe"] = {
 		},
 	},
 }
-
 data["BroodOfNozdormu"] = {
 	FactionID = 910,
 	ContentType = FACTIONS_CONTENT,
@@ -790,7 +771,6 @@ data["BroodOfNozdormu"] = {
 		},
 	},
 }
-
 data["HydraxianWaterlords"] = {
 	FactionID = 749,
 	ContentType = FACTIONS_CONTENT,
@@ -829,8 +809,6 @@ data["HydraxianWaterlords"] = {
 		},
 	},
 }
-
-
 data["BloodsailBuccaneers"] = {
 	FactionID = 87,
 	ContentType = FACTIONS2_CONTENT,
@@ -848,7 +826,6 @@ data["BloodsailBuccaneers"] = {
 		},
 	},
 }
-
 data["WintersaberTrainers"] = {
 	FactionID = 589,
 	ContentType = FACTIONS2_CONTENT,
@@ -863,7 +840,6 @@ data["WintersaberTrainers"] = {
 		},
 	},
 }
-
 --[[
 	data["Timbermaw"] = {
 	FactionID = 59,
@@ -897,5 +873,3 @@ data["WintersaberTrainers"] = {
 	},
 }
 ]]
-
-
