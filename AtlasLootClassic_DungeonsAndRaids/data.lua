@@ -793,6 +793,10 @@ data["ShadowfangKeep"] = {
 			ContentPhase = 6,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
+			[SOD_DIFF] = {
+				{ 1,  238348 }, -- The Axe of Severing
+				{ 2,  238349 }, -- Abomination Skin Leggings
+			},
 			[NORMAL_DIFF] = {
 				{ 1,  23173 }, -- Abomination Skin Leggings
 				{ 2,  23171 }, -- The Axe of Severing
@@ -1662,6 +1666,11 @@ data["ScarletMonasteryGraveyard"] = {
 			ContentPhase = 6,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
+			[SOD_DIFF] = {
+				{ 1, 238350 }, -- Scorn's Focal Dagger
+				{ 3, 238351 }, -- The Frozen Clutch
+				{ 5, 238352 }, -- Scorn's Icy Choker
+			},			
 			[NORMAL_DIFF] = {
 				{ 1, 23169 }, -- Scorn's Icy Choker
 				{ 2, 23170 }, -- The Frozen Clutch
@@ -2148,7 +2157,6 @@ data["RazorfenDowns"] = {
 					{ 11, 10573 }, -- Boneslasher
 				},
 			},
-
 		{ -- RFDLadyF
 			name = AL["Lady Falther'ess"],
 			npcID = 14686,
@@ -2157,9 +2165,13 @@ data["RazorfenDowns"] = {
 			ContentPhase = 6,
 			specialType = "scourgeInvasion",
 			ExtraList = true,
+			[SOD_DIFF] = {
+				{ 1, 238354 }, -- Lady Falther'ess' Finger
+				{ 2, 238353 }, -- Mantle of Lady Falther'ess
+			},	
 			[NORMAL_DIFF] = {
-				{ 1,  23178 }, -- Mantle of Lady Falther'ess
-				{ 2,  23177 }, -- Lady Falther'ess' Finger
+				{ 1, 23177 }, -- Lady Falther'ess' Finger
+				{ 2, 23178 }, -- Mantle of Lady Falther'ess
 			},
 		},
 		{ -- RFDHenryStern
@@ -5166,9 +5178,9 @@ data["DireMaulWest"] = {
 			specialType = "scourgeInvasion",
 			ExtraList = true,
 			[SOD_DIFF] = {
-				{ 1, 23127 }, -- Cloak of Revanchion
-				{ 2, 23129 }, -- Bracers of Mending
-				{ 3, 23128 }, -- The Shadow's Grasp
+				{ 1, 238362 }, -- Bracers of Mending
+				{ 2, 238363 }, -- The Shadow's Grasp
+				{ 3, 238364 }, -- Cloak of Revanchion
 			},
 			[NORMAL_DIFF] = {
 				{ 1, 23127 }, -- Cloak of Revanchion
@@ -6259,9 +6271,9 @@ data["Scholomance"] = {
 			specialType = "scourgeInvasion",
 			ExtraList = true,
 			[SOD_DIFF] = {
-				{ 1, 23132 }, -- Lord Blackwood's Blade
-				{ 2, 23156 }, -- Blackwood's Thigh
-				{ 3, 23139 }, -- Lord Blackwood's Buckler
+				{ 1, 238361 }, -- Lord Blackwood's Blade
+				{ 2, 238360 }, -- Lord Blackwood's Buckler
+				{ 3, 238358 }, -- Blackwood's Thigh
 			},
 			[NORMAL_DIFF] = {
 				{ 1, 23132 }, -- Lord Blackwood's Blade
@@ -6961,9 +6973,9 @@ data["Stratholme"] = {
 			AtlasMapBossID = 2,
 			ContentPhase = 6,
 			[SOD_DIFF] = {
-				{ 1, 23126 }, -- Waistband of Balzaphon
-				{ 2, 23125 }, -- Chains of the Lich
-				{ 3, 23124 }, -- Staff of Balzaphon
+				{ 1, 238357 }, -- Staff of Balzaphon
+				{ 3, 238356 }, -- Waistband of Balzaphon
+				{ 5, 238355 }, -- Chains of the Lich
 			},
 			[NORMAL_DIFF] = {
 				{ 1, 23126 }, -- Waistband of Balzaphon
